@@ -1,0 +1,17 @@
+
+
+nombrearchivo
+
+.DS_Store
+
+nombrecarpeta/nombrearchivo
+
+/nombrecarpeta
+
+nombrecarpeta/subcarpeta
+
+*.gif
+
+*.txt
+
+*.js
