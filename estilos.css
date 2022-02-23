@@ -6,10 +6,6 @@
 }
 
 
-@font-face {
-    font-family: 'sans-serif'
-
-}
 
 body {
     background-color: rgb(255, 255, 255);
@@ -297,6 +293,42 @@ a:visited {
 img {
     margin-left: 0;
 }
+
+.titulo-animado {
+    animation-name: titulo;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-delay:0;
+}
+
+@keyframes titulo {
+    from {
+        transform: translateX(2000px);
+        opacity: 0;
+        color:deeppink;
+    }
+
+    to  {
+        transform: translateX(0px);
+        opacity: 1;
+        color:deeppink;
+
+    }
+}
+
+.transicion {
+    transition: all 2s;
+   /* transition: width 2s, height 1s; */
+}
+
+.transicion:hover {
+    width: 100%;
+    height: 20vh;
+    background-image:url("https://placekitten.com/600");
+    border:solid 10px blue
+    transform: scale(1.5,1.5);
+
+
  @media (min-width: 481px) and (max-width: 1023px){
     #gridAreas {
         display: grid;
